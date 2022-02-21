@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Rowdies&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 10vh, 80vh, 10vh;
+    grid-template-rows: ;
+    grid-template-areas: 
+    "encabezado1 encabezado2"
+    "contenido contenido aside"
+    "pie pie pie";
+}
+
+.navLogo{
+    grid-area: "encabezado1";
+}
+.navMenu{
+    grid-area: "encabezado2";
+}
+.mainPresentacion{
+    grid-area: "contenido";
+}
+aside{
+    grid-area: "aside";
+}
+
+footer{
+    grid-area: "pie";
+}
+
+/* Contenido del Nav */
+
+Header nav{
+    background-color: #8A2BE2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+
+.navMenu{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100px;
+    background-color: #8A2BE2;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    background-color: #8A2BE2;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    background-color: #8A2BE2;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+
+/* Contenido Principal */
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.mainPresentacion{
+    margin-top: 30px;
+    font-family: 'Rowdies', cursive;
+}
+
+#Inicio{
+    display: inline-block;
+    color: #8A2BE2;
+    font-size: 25px;
+
+} 
+
+aside{
+    overflow: hidden;
+    width: 100vw;
+    justify-content: end;
+}
+
+/* Menu de Repuestos */
+
+.menuVenta{
+    display: inline-block;
+}
+
+.itemsVenta{
+    display: inline-block;
+}
+
+/* Contenido del Footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerRedes{
+    display: inline-block;
+    padding: 5vh;
+    background-color: rgb(10, 9, 22);
+}
+
+.redesTittle{
+    font-size: 20px;
+    color: cyan;
+}
+
+.footerContact{
+    display: flex;
+    padding-top: 5vh;
+}
+
+
+@media (min-width: 600px){
+
+    .navMenu{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    ul{
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+        background-color: #8A2BE2;
+    }
+
+    li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: solid 1px black;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Contenido Principal */
+
+    aside{
+        overflow: hidden;
+        width: 25vw auto;
+        justify-content: right;
+    }

@@ -10,7 +10,7 @@ body{
     color: white;
     display: grid;
     grid-template-columns: 10vh, 80vh, 10vh;
-    grid-template-rows: ;
+    grid-template-rows: 3, 3fr;
     grid-template-areas: 
     "encabezado1 encabezado2"
     "contenido contenido aside"
@@ -97,10 +97,10 @@ main{
 
 } 
 
-aside{
-    overflow: hidden;
-    width: 100vw;
-    justify-content: end;
+iframe{
+    overflow: scroll;
+    width: 320px;
+    height: 240px;
 }
 
 /* Menu de Repuestos */
@@ -163,8 +163,5 @@ footer{
 
     /* Contenido Principal */
 
-    aside{
-        overflow: hidden;
-        width: 25vw auto;
-        justify-content: right;
-    }
+    
+}

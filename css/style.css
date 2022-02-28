@@ -9,19 +9,17 @@ body{
     background-color: black;
     color: white;
     display: grid;
-    grid-template-columns: 10vh, 80vh, 10vh;
-    grid-template-rows: 3, 3fr;
-    grid-template-areas: 
-    "encabezado1 encabezado2"
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 500px 50px;
+    /*grid-template-areas: 
+    "encabezado encabezado"
     "contenido contenido aside"
-    "pie pie pie";
+    "pie pie pie";*/
+    row-gap: 20px;
 }
 
-.navLogo{
-    grid-area: "encabezado1";
-}
-.navMenu{
-    grid-area: "encabezado2";
+/*header{
+    grid-area: "encabezado";
 }
 .mainPresentacion{
     grid-area: "contenido";
@@ -31,50 +29,53 @@ aside{
 }
 
 footer{
-    grid-area: "pie";
-}
+    grid-area: "pie";*/
+
 
 /* Contenido del Nav */
 
-Header nav{
+nav{
     background-color: #8A2BE2;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: column;
     justify-content: space-between;
-    height: 60px;
+    height: 60px auto;
     width: 100%;
-    position: fixed;
 }
 
+.navLogo{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
 
 .navMenu{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    align-content: center;
-    width: 100px;
+    flex-flow: row wrap;
+    justify-content: center;
     background-color: #8A2BE2;
 }
 
-ul{
+.navMenu__list-align{
     list-style: none;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: end;
+    flex-flow: row wrap;
     background-color: #8A2BE2;
 }
 
-li{
+.listStyle{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
     border: solid 1px black;
     background-color: #8A2BE2;
+    padding: 5px;
+    margin: auto;
 }
 
-a:hover{
-    color: aquamarine;
+li:hover{
+    background-color: rgb(60, 112, 209);
+    transform: scaleY(1.5) scaleX(1.5);
+
 }
 
 
@@ -139,12 +140,26 @@ footer{
 
 @media (min-width: 600px){
 
+    body{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 60px 400px 50px;
+    }
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-color: #8A2BE2;
+    }
+
     .navMenu{
         display: flex;
         flex-flow: row nowrap;
+        
     }
     
-    ul{
+    .navMenu__list-align{
         list-style: none;
         display: flex;
         flex-flow: row nowrap;
@@ -152,7 +167,8 @@ footer{
         background-color: #8A2BE2;
     }
 
-    li{
+    .listStyle{
+        list-style: none;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -163,5 +179,9 @@ footer{
 
     /* Contenido Principal */
 
+    /* Footer */
     
+    .footerContact{
+        list-style: none;
+    }
 }

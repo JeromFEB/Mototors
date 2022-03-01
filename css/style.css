@@ -8,33 +8,14 @@
 body{
     background-color: black;
     color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 500px 50px;
-    /*grid-template-areas: 
-    "encabezado encabezado"
-    "contenido contenido aside"
-    "pie pie pie";*/
-    row-gap: 20px;
+    
 }
-
-/*header{
-    grid-area: "encabezado";
-}
-.mainPresentacion{
-    grid-area: "contenido";
-}
-aside{
-    grid-area: "aside";
-}
-
-footer{
-    grid-area: "pie";*/
 
 
 /* Contenido del Nav */
 
 nav{
+    grid-area: "encabezado";
     background-color: #8A2BE2;
     display: flex;
     flex-flow: column;
@@ -81,10 +62,6 @@ li:hover{
 
 /* Contenido Principal */
 
-main{
-    display: flex;
-    flex-flow: column wrap;
-}
 
 .mainPresentacion{
     margin-top: 30px;
@@ -98,11 +75,7 @@ main{
 
 } 
 
-iframe{
-    overflow: scroll;
-    width: 320px;
-    height: 240px;
-}
+.mainMap
 
 /* Menu de Repuestos */
 
@@ -111,12 +84,16 @@ iframe{
 }
 
 .itemsVenta{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    gap: 15px;
 }
 
 /* Contenido del Footer */
 
 footer{
+    grid-area: "pie";
     display: flex;
     flex-direction: row;
 }
@@ -140,11 +117,6 @@ footer{
 
 @media (min-width: 600px){
 
-    body{
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 60px 400px 50px;
-    }
 
     nav{
         display: flex;
@@ -178,6 +150,11 @@ footer{
     }
 
     /* Contenido Principal */
+
+    main{
+        grid-template-columns: ;
+        grid-template-rows: ;
+    }
 
     /* Footer */
     

@@ -15,7 +15,6 @@ body{
 /* Contenido del Nav */
 
 nav{
-    grid-area: "encabezado";
     background-color: #8A2BE2;
     display: flex;
     flex-flow: column;
@@ -37,14 +36,14 @@ nav{
     background-color: #8A2BE2;
 }
 
-.navMenu__list-align{
+.navMenu__listContent{
     list-style: none;
     display: flex;
     flex-flow: row wrap;
     background-color: #8A2BE2;
 }
 
-.listStyle{
+.navMenu__list{
     display: flex;
     flex-flow: row nowrap;
     border: solid 1px black;
@@ -53,29 +52,35 @@ nav{
     margin: auto;
 }
 
-li:hover{
+.navMenu__list:hover{
     background-color: rgb(60, 112, 209);
     transform: scaleY(1.5) scaleX(1.5);
+    color: black;
 
 }
 
 
 /* Contenido Principal */
 
-
-.mainPresentacion{
+#Inicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 200px;
+}
+.mainInicio{
     margin-top: 30px;
     font-family: 'Rowdies', cursive;
 }
 
-#Inicio{
+h2{
     display: inline-block;
     color: #8A2BE2;
     font-size: 25px;
-
 } 
 
-.mainMap
+.mainVideoPresentacion{
+    overflow: auto;
+}
 
 /* Menu de Repuestos */
 
@@ -90,10 +95,33 @@ li:hover{
     gap: 15px;
 }
 
+/* Contenido pagina Venta 0km*/ 
+
+.pageVenta0km{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.menuVenta0km{
+    display: flex;
+    flex-direction: column;
+}
+
+.motosEnVenta{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+
 /* Contenido del Footer */
 
 footer{
-    grid-area: "pie";
     display: flex;
     flex-direction: row;
 }
@@ -131,29 +159,60 @@ footer{
         
     }
     
-    .navMenu__list-align{
-        list-style: none;
+    .navMenu__listContent{
         display: flex;
         flex-flow: row nowrap;
         justify-content: end;
         background-color: #8A2BE2;
     }
 
-    .listStyle{
+    .navMenu__list{
         list-style: none;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        border: solid 1px black;
+        border: double 1px gray;
         margin: 0 auto;
-        padding: 10px;
+        padding: 12px;
+        align-items: center;
+    }
+
+    li a{
+        text-decoration: none;
+        font-style:unset;
+
     }
 
     /* Contenido Principal */
 
-    main{
-        grid-template-columns: ;
-        grid-template-rows: ;
+    #Inicio{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 300px 200px;
+    }
+
+    /* Contenido Venta 0km */
+
+    .pageVenta0km{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .menuVenta0km{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .motosEnVenta{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    li{
+        list-style: none;
     }
 
     /* Footer */

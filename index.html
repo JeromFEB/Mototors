@@ -4,49 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Rowdies&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../../Multimedia/Logo Enduro 2.png">
+    <link rel="icon" type="image/png" href="./media/Logo Enduro 2.png">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
     <title>Mototor's</title>
 </head>
 <body>
     <header>
         <nav>
-            <section class="navLogo">
-                <div>
-                <h1>MOTOTOR'S</h1>
-                <p><strong>Motorcycle Lover's</strong></p>
-                <img src="./media/logo enduro.jfif" alt="Logo" height="25px" width="25px">
-                </div>
-            </section>
-
-            <section class="navMenu">
-                <ul class="navMenu__listContent">
-                    <li class="navMenu__list"><a href="./index.html#Inicio">Inicio</a></li>
-                    <li class="navMenu__list"><a href="./pages/motos_0km.html">Motos 0km</a></li>
-                    <li class="navMenu__list"><a href="./pages/repuestos.html">Repuestos</a></li>
-                    <li class="navMenu__list"><a href="./pages/accesorios.html">Accesorios</a></li>
+           
+            <section class="nav">
+                <div class="nav justify-content-start">
+                    <h1>MOTOTOR'S</h1>
+                    <p><strong>Motorcycle Lover's</strong></p>
+                    <img src="./media/logo enduro.jfif" alt="Logo" height="25px" width="25px">
+                    </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item"><a href="./index.html#Inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="./pages/motos_0km.html" class="nav-link">Motos 0km</a></li>
+                    <li class="nav-item"><a href="./pages/repuestos.html" class="nav-link">Repuestos</a></li>
+                    <li class="nav-item"><a href="./pages/accesorios.html" class="nav-link">Accesorios</a></li>
                 </ul>
             </section>
         </nav>
     </header>
 
-    <main id="Inicio">
-            <section class="mainInicio">
-
-                <h2>SOMOS COMO VOS, MOTORCYCLE LOVER'S</h2>
-                <p><strong>Somos una empresa dedicada a la venta de Motos y Respuestos de las mismas con la finalidad de acompañarte en tu pasion por las motocicletas al igual que nosotros. Por lo tanto nos aseguramos de que tu compra valga cada segundo y puedas acceder a la maxima calidad de prestaciones de nuestra gama de vehiculos</strong></p>
-                
+    <main class="container-fluid">
+            <section class="row">
+                <div class="col-md-6">
+                    <h2>SOMOS COMO VOS, MOTORCYCLE LOVER'S</h2>
+                    <p><strong>Somos una empresa dedicada a la venta de Motos y Respuestos de las mismas con la finalidad de acompañarte en tu pasion por las motocicletas al igual que nosotros. Por lo tanto nos aseguramos de que tu compra valga cada segundo y puedas acceder a la maxima calidad de prestaciones de nuestra gama de vehiculos</strong></p>
+                </div>
             </section>
             
-            <section class="mainVideoPresentacion">
-                    <iframe width="480" height="320" src="https://www.youtube.com/embed/ARuRC5orObg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section class="row">
+                    <iframe width="480" height="320" src="https://www.youtube.com/embed/ARuRC5orObg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-md-6"></iframe>
             </section>
-            <section class="mainContenido">
+
+            <section class="row-md-6">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore sed maiores non dolorem eos ratione error, nemo qui aspernatur officia sequi corrupti sint velit suscipit corporis recusandae quos autem ea!</p>
             </section>
+
             <section class="mainDireccion">
                 <img src="./media/Mapa Mototor's.png" alt="mapa" width="300" height="250">
                 <p>Estamos ubicados en calle Pueyrredon N* 1785 de Guaymallen</p>

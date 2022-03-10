@@ -1,0 +1,55 @@
+#Inicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 200px;
+}
+.mainInicio{
+    margin-top: 30px;
+    font-family: 'Rowdies', cursive;
+}
+
+h2{
+    display: inline-block;
+    color: #8A2BE2;
+    font-size: 25px;
+} 
+
+.mainVideoPresentacion{
+    overflow: auto;
+}
+
+/* Menu de Repuestos */
+
+.menuVenta{
+    display: inline-block;
+}
+
+.itemsVenta{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    gap: 15px;
+}
+
+/* Contenido pagina Venta 0km*/ 
+
+.pageVenta0km{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.menuVenta0km{
+    display: flex;
+    flex-direction: column;
+}
+
+.motosEnVenta{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}

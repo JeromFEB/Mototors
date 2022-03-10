@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerRedes{
+    display: inline-block;
+    padding: 5vh;
+    background-color: rgb(10, 9, 22);
+}
+
+.redesTittle{
+    font-size: 20px;
+    color: cyan;
+}
+
+.footerContact{
+    display: flex;
+    padding-top: 5vh;
+}

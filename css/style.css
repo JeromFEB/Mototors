@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Rowdies&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: black;
-  color: white;
-}
-
 /* Contenido del Nav */
 * {
   margin: 0;
